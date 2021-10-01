@@ -8,6 +8,30 @@ ret=$?
 if [ $ret -ne 0 ]; then
 exit $ret
 fi
+rm -rf targetret=$?
+if [ $ret -ne 0 ]; then
+exit $ret
+fi
+rm -rf targetret=$?
+if [ $ret -ne 0 ]; then
+exit $ret
+fi
+rm -rf targetret=$?
+if [ $ret -ne 0 ]; then
+exit $ret
+fi
+rm -rf targetret=$?
+if [ $ret -ne 0 ]; then
+exit $ret
+fi
+rm -rf targetret=$?
+if [ $ret -ne 0 ]; then
+exit $ret
+fi
+rm -rf targetret=$?
+if [ $ret -ne 0 ]; then
+exit $ret
+fi
 rm -rf target
 
 ./gradlew build
@@ -17,9 +41,15 @@ exit $ret
 fi
 rm -rf build
 
-cd ../initial
-
-./mvnw clean compile
+cd ../initialret=$?
+if [ $ret -ne 0 ]; then
+exit $ret
+fi
+rm -rf targetret=$?
+if [ $ret -ne 0 ]; then
+exit $ret
+fi
+rm -rf target
 ret=$?
 if [ $ret -ne 0 ]; then
 exit $ret
