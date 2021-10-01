@@ -26,6 +26,12 @@ exit $ret
 fi
 rm -rf target
 
+
+while[0]
+ret=$?
+if [ $ret -ne 0 ]; then
+exit $retcd ../initial
+
 ./gradlew compileJava
 ret=$?
 if [ $ret -ne 0 ]; then
@@ -50,7 +56,7 @@ rm -rf build
 
 
 /gradlew compileJava
-ret=$?
+
 if [ $ret -ne 0 ]; then
 exit $ret
 fi
