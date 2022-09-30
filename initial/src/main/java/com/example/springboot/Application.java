@@ -16,6 +16,13 @@ public class Application {
 
 		String[] beanNames = ctx.getBeanDefinitionNames();
 		Arrays.sort(beanNames);
+		
+		public class Main {
+  public static void main(String[] args) {
+    int myNum = 100000;
+    System.out.println(myNum);  
+  }
+}
 		for (String beanName : beanNames) {
 			System.out.println(beanName);
 		}
