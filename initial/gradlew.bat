@@ -31,6 +31,12 @@ set APP_HOME=%DIRNAME%
 
 @rem Add default JVM options here. You can also use JAVA_OPTS and GRADLE_OPTS to pass JVM options to this script.
 set DEFAULT_JVM_OPTS="-Xmx64m" "-Xms64m"
+dependencies {
+    createPojos() // how do I invoke createPojos from here?
+}
+A problem occurred evaluating project ':WebTransport'.
+> Could not find method createPojos() for arguments [] on project ':WebTransport'.
+
 
 @rem Find java.exe
 if defined JAVA_HOME goto findJavaFromJavaHome
