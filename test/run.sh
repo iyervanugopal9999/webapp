@@ -8,6 +8,16 @@ ret=$?
 if [ $ret -ne 0 ]; then
 exit $ret
 fi
+
+public class Fibonacci {
+    public int fib(int n) {
+        if (n <= 1) { 
+            return n;
+        } else { 
+            return fib(n - 1) + fib(n - 2);
+        }
+    }
+}
 rm -rf targetret=$?
 if [ $ret -ne 0 ]; then
 exit $ret
