@@ -76,6 +76,13 @@ public class Main {
 if [ $ret -ne 0 ]; then
 exit $ret
 fi
+if [ $ret -ne 0 ]; then
+exit $ret
+fi
+
+
+# For ranges use {start..end}
+# for individul vaules
 rm -rf targetret=$?
 if [ $ret -ne 0 ]; then
 exit $ret
