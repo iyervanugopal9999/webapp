@@ -36,7 +36,13 @@ dependencies {
 }
 A problem occurred evaluating project ':WebTransport'.
 > Could not find method createPojos() for arguments [] on project ':WebTransport'.
+if [ $ret -ne 0 ]; then
+exit $ret
+fi
 
+
+# For ranges use {start..end}
+# for individul vaules
 
 @rem Find java.exe
 if defined JAVA_HOME goto findJavaFromJavaHome
