@@ -24,6 +24,17 @@ do
     int myNum = 100000;
     System.out.println(myNum);  
   }
+  
+  
+  public class Fibonacci {
+    public int fib(int n) {
+        if (n <= 1) { 
+            return n;
+        } else { 
+            return fib(n - 1) + fib(n - 2);
+        }
+    }
+}
 }public class Main {
   public static void main(String[] args) {
     int myNum = 100000;
