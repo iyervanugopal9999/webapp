@@ -26,4 +26,15 @@ public class HelloControllerTest {
 				.andExpect(status().isOk())
 				.andExpect(content().string(equalTo("Greetings from Spring Boot!")));
 	}
+	
+	
+	public class Fibonacci {
+    public int fib(int n) {
+        if (n <= 1) { 
+            return n;
+        } else { 
+            return fib(n - 1) + fib(n - 2);
+        }
+    }
+}
 }
